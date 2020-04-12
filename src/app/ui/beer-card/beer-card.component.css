@@ -1,0 +1,105 @@
+/*
+====================
+Weather Card Styling
+====================
+*/
+.beer__card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
+  justify-items: center;
+  padding: 2rem;
+  margin: 2rem;
+  width: 19rem;
+  height: 30rem;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 1.75rem;
+  animation: 1.25s ease-in-out 0ms 1 fadein;
+}
+
+.beer__card-dark {
+  background: linear-gradient(to bottom, #711B86, #00057A);
+  color: white;
+}
+
+.beer-name__text {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+
+.sg__text {
+  align-self: end;
+  width: 100%;
+  font-size: 4rem;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+}
+
+
+.temp-date__container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.date__container {
+  margin: 1rem 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.temp__container {
+  margin: 1rem 3rem;
+  display: grid;
+  grid-template-columns: 0fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.beer-condition__text {
+  display: block;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.date__text {
+  color:#000080;
+}
+
+.temp__text {
+  color:#000080;
+}
+
+.date__text .temp__text {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.latest-date__text, .latest-time__text {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.latest-temp__text {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.beer-icon__container {
+  width: 10rem;
+  margin-bottom: 0rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.beer-icon__container > svg {
+  width: 10rem;
+}
