@@ -5,24 +5,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AddCardComponent } from './ui/add-card/add-card.component';
-import { DetailsComponent } from './pages/details/details.component';
 import { WeatherCardComponent } from './ui/weather-card/weather-card.component';
 import { BeerCardComponent } from './ui/beer-card/beer-card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { BeerMonitorService } from './services/beer-monitor/beer-monitor.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AddCardComponent,
-    DetailsComponent,
     WeatherCardComponent,
     BeerCardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [BeerMonitorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -40,24 +40,24 @@ Weather Card Styling
 }
 
 
-.temp-date__container {
+.temp-date__container, .temp-date-text__container {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
   align-items: center;
 }
 
-.date__container {
-  margin: 1rem 3rem;
+.date__container, .temp__container, .temp-text__container, .date-text__container {
+  margin: 1rem 2rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
 }
 
-.temp__container {
-  margin: 1rem 3rem;
+.temp-text__container, .date-text__container {
+  margin: 0rem 2rem;
   display: grid;
-  grid-template-columns: 0fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
 }
 
@@ -89,7 +89,7 @@ Weather Card Styling
 
 .latest-temp__text {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .beer-icon__container {
